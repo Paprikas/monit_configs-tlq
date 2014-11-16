@@ -7,4 +7,5 @@ default['redisio']['servers'] = [{'port' => '6379'}]
 default['monit_configs-tlq']['system']['memory_usage'] = '75'
 default['monit_configs-tlq']['system']['cpu_usage_user'] = '70'
 default['monit_configs-tlq']['system']['cpu_usage_system'] = '30'
+default['monit_configs-tlq']['system']['cpu_usage_wait'] = '20'
 default['monit_configs-tlq']['system']['space_usage'] = '50'

@@ -6,6 +6,6 @@
         group database
         start program = "/etc/init.d/redis<%= server_name %> start"
         stop program = "/etc/init.d/redis<%= server_name %> stop"
-        if failed host 127.0.0.1 port 6379 then restart
+        if failed host 127.0.0.1 port <%= server['port'] %> then restart
         if 15 restarts within 15 cycles then timeout
 <% end %>
